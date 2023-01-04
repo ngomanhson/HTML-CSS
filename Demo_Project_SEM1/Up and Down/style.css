@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+#buy-anmount{
+    display: flex;
+}
+#buy-amount button{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+#buy-amount button:hover{
+    background-color: #ececec;
+}
+#buy-amount button i{
+    color: #000;
+    z-index: 99;
+}
+
+#buy-amount #amount{
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ececec;
+}

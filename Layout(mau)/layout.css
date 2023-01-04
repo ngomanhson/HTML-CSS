@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Anton&family=Bebas+Neue&family=Bree+Serif&family=Koulen&family=Merriweather+Sans:wght@600;700&family=Roboto+Slab&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F8FF;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    float: none;
+}
+.navigation h2{
+    text-align: right;
+}
+.footer h2{
+    text-align: right;
+}
+.sidebar{
+    float: left;
+    width: 25%;
+}
+.content{
+    float: left;
+    width: 75%;
+}
+.one-col .content{
+    width: 100%;
+}
+.three-col .content{
+    width: 50%;
+}
+

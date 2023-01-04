@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #130f40;
+}
+section{
+    width: 750px;
+    margin: 250px auto;
+}
+.text{
+    font-size: 18px;
+    /* color: #00FF7F; */
+    color: #ddd;
+}

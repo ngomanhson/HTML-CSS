@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập</title>
+</head>
+<body>
+<ul id="menu" style="list-style:none">
+
+</ul>
+<script type="text/javascript">
+  function getMenu() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      var data = JSON.parse(this.responseText);
+      var ls = data.data;
+      for (var i = 0; i < ls.length; i++) {
+        var li_html = `<li style="float:left; text-align: center; font-family: 'Poppins', sans-serif;"><img width="450px" src="${ls[i].image}"/> <br><h1 style=" font-size:19px"> ${ls[i].name}</h1> <br> ${ls[i].description} <span style="font-size:16px; font-weight:500;">${ls[i].price}</span<li>`;
+        var menu = document.getElementById("menu");
+        menu.innerHTML +=li_html;
+      }
+    }
+    var url = "https://foodgroup.herokuapp.com/api/today-special";
+    xhttp.open("get", url, true);
+    xhttp.send();
+  }
+  getMenu();
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque, modi delectus nam, fugit repellendus, odio adipisci unde dolores impedit quaerat accusantium natus amet nisi aut reiciendis. Sunt accusantium ratione dignissimos harum itaque iste porro corrupti error minima, iusto laudantium quod, totam sapiente tenetur numquam? Itaque ullam explicabo quam consequatur.
+        </p>
+    </section>
+    <script>
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const animtion = anime.timeline({
+            target: '.text span',
+            easeing: 'easeInOutExpo',
+            loop: true,
+        })
+        
+    </script>
+</body>
+</html>

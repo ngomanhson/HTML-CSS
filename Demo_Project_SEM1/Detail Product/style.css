@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #222f3e;
+}
+.menu-chitiet{
+    position: relative;
+}
+.product{
+    position: absolute;
+
+   
+}
+.product-img{
+    float: left;
+}
+.product-img img{
+    height: 92px;
+    margin: 10px 0;
+    display: block;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s linear;
+}
+.product-img img:hover{
+    opacity: 1;
+}
+
+.img-container{
+    float: right;
+}
+.img-container img{
+    height: 500px;
+    margin: 10px;
+}

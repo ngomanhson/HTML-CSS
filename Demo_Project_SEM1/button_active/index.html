@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the buttons */
+.nut-danhmuc {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .nut-danhmuc:hover {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Active Button</h1>
+<p>Highlight the active/current (pressed) button.</p>
+  
+<div id="an-hien">
+  <ul class="list-danhmuc">
+    <li><button class="nut-danhmuc active"><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+    <li><button class="nut-danhmuc "><i class='bx bxs-right-arrow'></i>Phùng Vũ như bò</button></li>
+  </ul>
+</div>
+<!-- <div id="myDIV">
+  <ul>
+    <li><button class="nut-danhmuc active">1</button></li>
+    <li><button class="nut-danhmuc">2</button></li>
+  </ul>
+</div> -->
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("an-hien");
+var btns = header.getElementsByClassName("nut-danhmuc");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

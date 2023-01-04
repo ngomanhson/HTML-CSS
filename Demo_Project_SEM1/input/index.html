@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .tang-giam {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#soluong {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+</style>
+<body>
+    <form class="tang-giam">
+        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+        <input type="number" id="soluong" value="1" />
+        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+      </form>
+      <script>
+        function increaseValue() {
+            var value = parseInt(document.getElementById('soluong').value, 10);
+            value = isNaN(value) ? 1 : value;
+            value++;
+            document.getElementById('soluong').value = value;
+          }
+          
+          function decreaseValue() {
+            var value = parseInt(document.getElementById('soluong').value, 10);
+            value = isNaN(value) ? 1 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('soluong').value = value;
+          }
+      </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Noto+Sans+Limbu&family=Poppins&family=Roboto&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tabcontent .single-desc{
+  width: 650px;
+  float: left;
+  margin-left: 80px;
+}
+.tabcontent .single-desc h5{
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+.tabcontent .single-desc p{
+  font-size: 17px;
+  color: #777;
+  line-height: 30px;
+}
+
+.tabcontent .features{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 350px;
+  left: 100px;
+}
+.tabcontent .features .img-icon{
+  margin-right: 130px;
+  font-size: 28px;
+}
+.tabcontent .features .img-icon .icons{
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+}
+.tabcontent .features .img-icon .icons img{
+  width: 45px;
+}
+/* Table */
+#Paris{
+  width: 900px;
+  background-color: red;
+  height: 464px;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 800px;
+  align-items: center;
+  margin: 23px 46px;
+}
+
+td, th {
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f2f6;
+}
+
+
+
+/* Review */
+.tabcontent .reviews-wrapper{
+  top: 20px;
+  width: 550px;
+  height: 100px;
+  background-color: #fff;
+}
+.tabcontent .reviews-wrapper h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-left: 115px;
+}
+.tabcontent .reviews-wrapper .comment{
+  position: relative;
+  width: 500px;
+  height: 135px;
+  margin-top: 50px;
+  margin-left: 115px;
+  margin-bottom: 30px;
+}
+.tabcontent .reviews-wrapper .comment .user-img img{
+  width: 70px;
+  border-radius: 50%;
+}
+.tabcontent .reviews-wrapper .comment .user-comment a{
+  position: absolute;
+  top: 9px;
+  left: 90px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.2s;
+}
+.tabcontent .reviews-wrapper .comment .user-comment a:hover{
+  color: #3577f0;
+}
+.tabcontent .reviews-wrapper .comment .star {
+  position: absolute;
+  top: 11px;
+  left: 330px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffd700;
+}
+.tabcontent .reviews-wrapper .comment .comment-list{
+  position: absolute;
+  width: 400px;
+  top: 33px;
+  left: 89px;
+  font-size: 15px;
+  color: #777;
+}
+.tabcontent .send-review{
+  position: relative;
+  top: -47px;
+  width: 650px;
+  height: 550px;
+  left: 718px;
+  background-color: #fff;
+}
+.tabcontent .send-review .title-comment h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.tabcontent .send-review .title-comment p{
+  position: absolute;
+  top: 26px;
+  font-size: 14px;
+  color: #777;
+}
+.tabcontent .send-review .title-comment p span{
+  color: #EA2027;
+}
+.tabcontent .send-review .rating-wrapper h6{
+  position: absolute;
+  top: 44px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+}
+.tabcontent .send-review .rating-wrapper h6 span{
+  color: #EA2027;
+}
+.tabcontent .send-review .star-focus{
+  position: absolute;
+  font-size: 20px;
+  color: #777;
+  top: 81px;
+  left: 160px;
+}
+.tabcontent .send-review .comment-input{
+  position: absolute;
+  top: 150px;
+}
+.tabcontent .send-review .comment-input .mb-3 .form-label-1{
+  position: absolute;
+  font-size: 14px;
+  width: 177px;
+  top: -10px;
+  left: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+.tabcontent .send-review .comment-input .mb-3 .form-label-1 span{
+  color: #EA2027;
+}
+.tabcontent .send-review .comment-input .mb-3 .form-control-1{
+  width: 650px;
+  padding: 20px 0 148px 20px;
+  border-radius: 5px;
+  border: 1.5px solid #777;
+  outline:none;
+}
+.tabcontent .send-review .comment-input .mb-3 .form-control-1:focus{
+  border: 1.5px solid #3577f0;
+}
+.tabcontent .send-review .comment-input .mb-2{
+  float: left;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-label-2{
+  position: absolute;
+  font-size: 14px;
+  width: 67px;
+  top: 213px;
+  left: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-label-2 span{
+  color: #EA2027;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-control-2{
+  width: 292px;
+  margin-top: 35px;
+  margin-right: 50px;
+  padding: 16px 0 10px 16px;
+  border-radius: 5px;
+  border: 1.5px solid #777;
+  outline:none;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-control-2:focus{
+  border: 1.5px solid #3577f0;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-label-3{
+  position: absolute;
+  font-size: 14px;
+  width: 67px;
+  top: 213px;
+  left: 390px;
+  text-align: center;
+  background-color: #fff;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-label-3 span{
+  color: #EA2027;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-control-3{
+  width: 292px;
+  margin-top: 35px;
+  padding: 16px 0 10px 16px;
+  border-radius: 5px;
+  border: 1.5px solid #777;
+  outline:none;
+}
+.tabcontent .send-review .comment-input .mb-2 .form-control-3:focus{
+  border: 1.5px solid #3577f0;
+}
+.tabcontent .send-review .comment-input .review-submit button{
+  width: 150px;
+  height: 45px;
+  margin-top: 30px;
+  background: #3577f0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,150 @@
+img{
+ vertical-align:middle; 
+}
+.slider-btns{
+  display: flex;
+  justify-content: flex-end;
+  width: 91%;
+  margin: 30px auto 10px auto;
+  padding: 0 10px;
+}
+.slider-btns button{
+  position: static !important;
+  transform: translate(0,0);
+  background-color: #f6f7fb;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.slider-btns button i{
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #777;
+}
+.glider{
+  margin: 0 auto;
+  width: 95%;
+  height: 450px;
+}
+.box-hover{
+  margin: 30px 22px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.box-hover img{
+  width: 351px;
+  transition: all 0.3s;
+}
+.box-hover .img-change{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+.box-hover:hover .img-change {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.box-hover .show{
+  position: absolute;
+  color: red;
+  bottom: 95px;
+  left: 10%;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.box-hover:hover .show{
+  bottom: 30%;
+  opacity: 1;
+}
+.content a{
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #636e72;
+}
+.content p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.button1{
+  background-color: #f1f2f6;
+  border: none;
+  color: #000;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button1 i{
+  font-size: 16px;
+}
+.button1:hover{
+  transform: scale(1.05);
+}
+.button1 i:hover{
+  animation: in 0.2s;
+}
+.button2{
+  background-color: #ff6b81;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button2:hover{
+  transform: scale(1.05);
+}
+.button3{
+  background-color: #f1f2f6;
+  border: none;
+  color: #000;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button3 i{
+  font-size: 16px;
+}
+.button3{
+  color: #000;
+}
+.button3:hover{
+  transform: scale(1.05);
+}
+.button3 i:hover {
+  color: #ff6b81;
+  animation: in 0.1s;
+}
+@keyframes in{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

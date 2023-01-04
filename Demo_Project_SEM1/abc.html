@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Học Web Chuẩn</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+* { /* reset lại margin và padding cho các tag */
+    margin: 0;
+    padding: 0;
+}
+img { vertical-align:middle; }
+.box-hover {
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+    width: 200px;
+}
+.box-hover img {
+    max-width: 100%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.box-hover .button1,
+.box-hover .button2 {
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+    text-align: center;
+}
+.box-hover .button1 {
+    transition: all 0.5s;
+}
+.box-hover .button2 {
+    transition: all 1s;
+}
+
+.box-hover:hover img {
+    opacity: 0;
+}
+.box-hover:hover .button1 {
+    bottom: 50%;
+}
+.box-hover:hover .button2 {
+    bottom: 40%;
+}
+</style>
+</head>
+<body>
+<div class="box-hover">
+    <img src="images.jpg" alt="">
+    <button class="button1"><i class='bx bx-show-alt'></i></button>
+        <button class="button2">Add to card</button>
+</div>
+</body>
+</html>

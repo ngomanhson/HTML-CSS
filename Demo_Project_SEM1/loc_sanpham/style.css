@@ -1,0 +1,71 @@
+html {
+	font-size: 125%;
+}
+.custom-select {
+	width: 50%; 
+	margin: 1rem auto; padding: 2rem;
+	background-color: yellowgreen;
+	--focused-border-color: #333;
+}
+
+select {
+	appearance: none;
+	border-width: 2px;
+	border-color: transparent;
+	box-sizing: border-box;
+	height: 2rem;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	flex-grow: 1;
+}
+select:focus {
+	outline: none;
+	border-color: var(--focused-border-color);
+}
+label {
+	position: relative;
+	width: 50%;
+	min-width: 10em;
+	max-width: 18em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	background-color: rgba(255,128,0,.5);
+}
+label::after {
+	content: '\25BE';
+	background-color: var(--focused-border-color);;
+	color: #fff;
+	width: 2rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+label.svg::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='20' viewBox='0 0 10 20'%3E%3Cg fill='white'%3E%3Cpolygon id='up' points='0,7 5,2 10,7 '/%3E%3Cpolygon id='down' points='0,13 10,13 5,18 '/%3E%3C/g%3E%3C/svg%3E%0A");
+	line-height: 0;
+}
+
+
+
+
+/* Bootstrap 4 convention for hiding elements that are important for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}

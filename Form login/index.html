@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">     
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Đăng nhập</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required placeholder="Nhập email của bạn" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required class="password" placeholder="Nhập mật khẩu của bạn" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lưu thông tin đăng nhập</label>
+                        </div>
+                        
+                        <a href="#" class="text">Quên mật khẩu</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                </form>
+                
+                <div class="login-signup">
+                    <span class="text">Bạn chưa có tài khoản?
+                        <a href="#" class="text signup-link">Đăng ký ngay</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form signup">
+                <span class="title">Tạo tài khoản</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required placeholder="Nhập tên của bạn" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required placeholder="Nhập email của bạn" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required class="password" placeholder="Nhập mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required class="password" placeholder="Xác nhận mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" required id="termCon">
+                            <label for="termCon" class="text">Tôi đồng ý chấp nhận tất cả các điều khảon và điều kiện</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Đăng ký">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Bạn đã có tài khoản?
+                        <a href="#" class="text login-link">Đăng nhập ngay</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

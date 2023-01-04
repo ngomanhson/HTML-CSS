@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<style>
+   
+    button i{
+        transition: all 0.5s ease;
+        font-size: 20px;
+    }
+    button i:hover{
+      height: 30px;
+        width: 30px;
+        color: #fff;
+        text-align: center;
+        margin: 0 5px;
+        line-height: 30px;
+        border: 0px solid transparent;
+        border-radius: 50%;
+        background: #000416;
+    }
+    
+    span button{
+      height: 40px;
+      width: 40px;
+      color: #fff;
+      margin: 10px;
+      line-height: 42px;
+      border: 0px solid transparent;
+      border-radius: 50%;
+      background: linear-gradient(375deg, #00BFFF, #9370DB);
+      transition: all 0.5s ease;
+    }
+    button:focus span{
+      display: block;
+      height: 60px;
+      width: 60px;
+      background: #fff;
+      line-height: 42px;
+      border: 0px solid transparent;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      border: 2px solid rgb(255, 149, 0);
+    }
+</style>
+<body>
+    <div class="view">
+        <button><i class='bx bxs-chevron-right'></i>View All Products</button>
+    </div>
+    <span><button type="button"></button></span>
+<script>
+    let timerInterval
+Swal.fire({
+  title: 'Auto close alert!',
+  html: 'I will close in <b></b> milliseconds.',
+  timer: 100,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+</script>
+</body>
+</html>

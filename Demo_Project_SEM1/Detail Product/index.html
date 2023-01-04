@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-chitiet">
+        <div class="product">
+            <div class="product-img">
+                <img src="./img1(1).jpg" onclick="myFunction(this)" alt=""/>
+                <img src="./img1(2).jpg" onclick="myFunction(this)" alt=""/>
+                <img src="./img1(3).jpg" onclick="myFunction(this)" alt=""/>
+                <img src="./img1(4).jpg" onclick="myFunction(this)" alt=""/>
+            </div>
+            <div class="img-container">
+                <img src="./img1(1).jpg" id="imgBox" alt=""/>
+            </div>
+        </div>
+    </div>
+<script>
+    function myFunction(smallImg){
+        var fullImg  = document.getElementById("imgBox");
+        fullImg.src = smallImg.src;
+    }
+</script>
+</body>
+</html>

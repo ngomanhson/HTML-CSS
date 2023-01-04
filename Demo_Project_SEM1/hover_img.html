@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Học Web Chuẩn</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+img { vertical-align:middle; }
+.box-hover {
+    margin: 10px auto;
+    border: 1px solid #CCC;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+}
+.box-hover img {
+    max-width: 100%;
+    transition: all 1s;
+}
+
+.box-hover .img-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+.box-hover:hover .img-change {
+    opacity: 0;
+}
+</style>
+</head>
+<body>
+<div class="box-hover">
+    <img src="img.jpg" alt="">
+    <img src="images.jpg" alt="" class="img-change">
+    <button ><i class='bx bx-show-alt'></i></button>
+</div>
+</body>
+</html>

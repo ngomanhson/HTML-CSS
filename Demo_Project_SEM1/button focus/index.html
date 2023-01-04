@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+        .my-color ul li{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid orange;
+            cursor: pointer;
+        }
+        
+        .my-color ul li button{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        .my-color ul li button:focus{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-color">
+        <ul class="color-variant">
+            <li class="color-active"><button type="button" class="active-color1"></button></span></li>
+        </ul>
+      </div>
+</body>
+</html>

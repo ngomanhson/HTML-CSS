@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <form action="#">
+        <input id="pass" type="password" required placeholder="Nhập vào đây..."/>
+        <button type="submit" onclick="Next()">jksxhfvnjx</button>
+    </form>
+
+<script>
+    const PassWord = [
+        {
+            password: "123"
+        }
+    ]
+    let login = false
+	function Next(){
+		let password = document.getElementById('pass').value
+		let checkLogin = PassWord.some(value => value.password === password)
+		if(checkLogin){
+			localStorage.setItem("token",password)
+			Swal.fire(
+                'Đăng nhập thành công',
+                '',
+                'success'
+                )
+			window.location('https://www.facebook.com/NgoManhSon.23');
+		}else{
+			Swal.fire({
+                icon: 'error',
+                title: 'Đăng nhập không thành công',
+                text: 'Vui lòng nhập chính xác',
+              })
+		}
+	}
+
+</script>
+</body>
+</html>

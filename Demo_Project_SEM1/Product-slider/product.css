@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.p-slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 95%;
+}
+.product-slider-heading{
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  text-align: center;
+  margin: 0;
+}
+.product-box{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 0 20px;
+}
+.p-img-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.p-img a,
+.p-img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.p-img a img{
+  width: 100%;
+  height: 300px;
+  object-position: center;
+  object-fit: contain;
+  animation: fade 0.6s;
+}
+.p-img-back{
+  display: none;
+}
+.p-img-container:hover .p-img-back{
+  display: block;
+}
+.p-img-container:hover .p-img-front{
+  display: none;
+}
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.p-box-text{
+  margin-top: 5px;
+  width: 100%;
+}
+.product-category{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product-category span{
+  color: #acacac;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+.product-title{
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+.product-title:hover{
+  color: #111;
+  opacity: 0.7;
+  transition: all ease 0.3s;
+}
+.price-buy{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.price-buy .p-price{
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 700;
+}
+.price-buy .p-buy-btn{
+  color: #e63b3b;
+  margin: 0 5px;
+  font-weight: 600;
+}
+.price-buy .p-buy-btn:hover{
+  text-decoration: underline;
+}
+
+/*  */
+.slider-btns{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 30px auto 10px auto;
+  padding: 0 10px;
+}
+.slider-btns button{
+  position: static !important;
+  transform: translate(0,0);
+  background-color: #f3f3f3;
+  width: 80px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+}
+.slider-btns button span{
+  font-weight: bold;
+  padding: 0px 15px 10px 10px;
+  position: relative;
+  text-decoration: none;
+}

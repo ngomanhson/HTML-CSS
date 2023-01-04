@@ -1,0 +1,69 @@
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-select span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.color-select .color-1{
+    background-color: #ff8666;
+}
+.color-select .color-2{
+    background-color: #ff497c;
+}
+.color-select .color-3{
+    background-color: #8d6abe;
+}
+.color-select input{
+    display: none;
+}
+.color-select input:hover + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff,0 0 0 7px #ffcccc;
+}
+.color-select input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff,0 0 0 7px #ffcccc;
+}
+
+/* Size */
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.size-select span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.size-select span:hover{
+    box-shadow: 0 0 0 3px #fff,0 0 0 4px #777;
+}
+.size-select .size{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.size-select input{
+    display: none;
+}
+.size-select input:checked + span{
+    transform: scale(0.9);
+    box-shadow: 0 0 0 3px #fff,0 0 0 4px #777;
+}

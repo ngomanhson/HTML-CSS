@@ -1,0 +1,50 @@
+html, body {
+  font-family: 'Teko';
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 250px;
+  min-height: 30px;
+}
+.rating label {
+  display: flex;
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+}
+.rating label:after{
+  transition: all 0.4s ;
+  position: absolute;
+  content: "☆";
+  color: #777;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 70px;
+  line-height: 1;
+}
+.rating label:hover:after{
+  color: #ffd700;
+}
+.rating input {
+  display: none;
+  padding-left: 5px;
+}
+.rating input:checked + label:after,
+.rating input:checked ~ label:after {
+  content: "★";
+  color: #ffd700;
+}

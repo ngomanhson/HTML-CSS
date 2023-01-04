@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #FFB6C1;
+}
+.ballon{
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    margin: 0 150px;
+    border-radius: 50%;
+    background-color: rgba(192, 1, 5, 0.4);
+    animation: move-up 5s;
+}
+.ballon::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: white;
+    top: 110px;
+    left: 50px;
+}
+.ballon::after{
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid red;
+    border-left: 10px solid
+    transparent;
+    border-right: 10px solid
+    transparent;
+    top: 109px;
+    left: 41px;
+}
+.ballon:nth-child(2){
+    left: 140px;
+    background-color: rgba(0, 0, 255, 0.5);
+    animation-duration: 3s;
+}
+.ballon:nth-child(2)::after{
+    border-bottom: 12px solid blue;
+}
+.ballon:nth-child(3){
+    left: 300px;
+    background-color: rgba(255, 155, 0, 0.5);
+    animation-duration: 2s;
+}
+.ballon:nth-child(3)::after{
+    border-bottom: 12px solid orange;
+}
+.ballon:nth-child(4){
+    left: 392px;
+    background-color: rgba(18, 255, 138, 0.5);
+}
+.ballon:nth-child(4)::after{
+    border-bottom: 12px solid green;
+}
+.ballon:nth-child(5){
+    left: 502px;
+    background-color: rgba(251, 125, 220, 0.5); 
+    animation-duration: 4s;
+}
+.ballon:nth-child(5)::after{
+    border-bottom: 12px solid blueviolet;
+}
+.ballon:nth-child(6){
+    left: 671px;
+    background-color: rgba(0, 255, 255, 0.5); 
+}
+.ballon:nth-child(6)::after{
+    border-bottom: 12px solid aqua;
+}
+.ballon:nth-child(7){
+    left: 811px;
+    background-color: rgba(192, 1, 5, 0.5); 
+    animation-duration: 3s;
+}
+.ballon:nth-child(8){
+    left: 990px;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+.ballon:nth-child(8)::after{
+    border-bottom: 12px solid white;
+}
+.ballon:nth-child(9){
+    left: 1080px;
+    background-color: rgba(255, 255, 0, 0.5); 
+    animation-duration: 2s;
+}
+.ballon:nth-child(9)::after{
+    border-bottom: 12px solid greenyellow;
+}
+
+@keyframes move-up{
+    0%{
+        top: 69%;
+    }
+    100%{
+        top: 0%;
+    }
+}

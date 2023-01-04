@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Poppins&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+#toggle{
+  display: none;
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  font-size:20px;
+  cursor: pointer;
+}
+nav{
+  background-color: #70a1ff;
+}
+#main-menu{
+  display: flex;
+}
+nav #main-menu li a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+}
+nav #main-menu li:hover a{
+  background: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px){
+  #main-menu{
+    flex-direction: column;
+    text-align: center;
+  }
+  #toggle{
+    display: block;
+  }
+  nav{
+    display: none;
+  }
+}

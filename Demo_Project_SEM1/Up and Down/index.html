@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    .amount-product{
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        background-color: #fff;
+    }
+    .amount-product p{
+        font-size: 17px;
+        color: #777;
+        margin: 10px 15px;
+    }
+    .amount-product .amount button{
+        width: 25px;
+        height: 25px;
+        margin: 0 15px;
+        outline: none;
+        border: none;
+        background: #dcdde1;
+        color: #000;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    .amount-product .amount button:hover{
+        background: #000;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div class="amount-product">
+        <p>5 products available</p>
+        <div class="amount">
+            <button class="btn-minus" onclick="tongcong1()"><i class='bx bx-minus'></i></button>
+            <span id="add">0</span>
+            <button class="btn-plus" onclick="tongcong2()"><i class='bx bx-plus'></i></button>
+        </div>
+      </div>
+<script>
+    var t=1;
+    var x=0;
+    function tongcong1() {
+        if (x >0){
+            var cong1 = document.getElementById("add");
+            cong1.innerText = x-1;
+            x--;
+        }
+    }
+    function tongcong2() {
+        if (x < 6) {
+            var cong = document.getElementById("add");
+            cong.innerText = x;
+            x++;
+        }
+    }
+
+</script>
+</body>
+</html>

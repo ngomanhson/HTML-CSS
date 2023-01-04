@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form{
+    align-items: center;
+    margin: 50% center;
+}
+input{
+    width: 220px;
+    height: 30px;
+    border-radius: 2px;
+    display: inline-block;
+}
+button{
+    width: 78px;
+    height: 30px;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover{
+    background: rgba(255, 163, 198, 1);;
+}
