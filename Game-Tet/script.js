@@ -1,7 +1,7 @@
-var elDiceOne       = document.getElementById('dice1');
-var elDiceTwo       = document.getElementById('dice2');
-var elDiceThree       = document.getElementById('dice3');
-var elComeOut       = document.getElementById('roll');
+var elDiceOne = document.getElementById('dice1');
+var elDiceTwo = document.getElementById('dice2');
+var elDiceThree = document.getElementById('dice3');
+var elComeOut = document.getElementById('roll');
 
 elComeOut.onclick   = function () {rollDice();};
 
@@ -37,30 +37,29 @@ function rollDice() {
 
 
 var id = null;
-function upBat(){
-  var elem = document.getElementById("animationBat");
-  var pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 0.0001);
-  function frame() {
-    if (pos == 10) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.left = -132 + 'px';
-    }
-  }
-}
 
 function xoc() {
   var audio = new Audio('./media/dicerolling.ogg');
     audio.play();
-    Swal.fire({
-      icon: 'success',
-      title: 'Xóc thành công',
-      showConfirmButton: false,
-      timer: 3500
-    })
+    // Swal.fire({
+    //   icon: 'success',
+    //   title: 'Xóc thành công',
+    //   showConfirmButton: false,
+    //   timer: 3500
+    // })
+    var elem = document.getElementById("animationBat");
+    var pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 0.0001);
+    function frame() {
+      if (pos == 10) {
+        clearInterval(id);
+      } else {
+        pos++;
+        elem.style.left = -132 + 'px';
+      }
+      
+  }
 }
 
 function moBat(){
