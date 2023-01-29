@@ -182,5 +182,16 @@
 
 	</div>
 </main>
+
+<script>
+	const currentTitle = document.title
+
+	window.addEventListener("blur", () => {
+		document.title = "You're away";
+	});
+	window.addEventListener("focus", () => {
+		document.title = currentTitle;
+	});	
+</script>
 </body>
 </html>
