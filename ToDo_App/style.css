@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(194,222,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+#wrapper{
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+#content{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #00d4ff;
+    margin-top: 20px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+form input{
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+}
+form .add{
+    width: 20%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    background: #090101;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.navbar ul li{
+    width: 45%;
+    background: #16ddc8;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.avtive{
+    background: #060606;
+}
+.list-tasks{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    overflow: auto;
+    max-height: 200px;
+}
+.list-tasks .item{
+    width: 100%;
+    background: rgb(230 240 255);
+    margin-bottom: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    justify-content: space-between;
+}
+.list-tasks .item .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-tasks .item .action i{
+    margin-right: 10px;
+}
+.list-tasks .item .action .fa-trash{
+    color: #ec0944;
+}
+.list-tasks .item .action .fa-edit{
+    color: #0becb4;
+}
+.clear{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #0be3ec;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
